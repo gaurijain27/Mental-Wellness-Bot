@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Wellness Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mental Wellness Bot</h1>
+    <p>Your friendly space for support and self-reflection</p>
+  </header>
+
+  <main>
+    <div class="mood-tracker">
+      <h2>How are you feeling today?</h2>
+      <div class="moods">
+        <button onclick="logMood('happy')">😊 Happy</button>
+        <button onclick="logMood('anxious')">😟 Anxious</button>
+        <button onclick="logMood('stressed')">😰 Stressed</button>
+        <button onclick="logMood('sad')">😢 Sad</button>
+      </div>
+    </div>
+
+    <div class="chat-container">
+      <div id="chat-box"></div>
+      <div class="input-area">
+        <input type="text" id="user-input" placeholder="Type your thoughts..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gauri Jain — For self-care and positivity</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
