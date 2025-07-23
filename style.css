@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f0f8ff;
+  background-color: #fefefe;
   color: #333;
 }
 
 header {
-  background-color: #2b6777;
+  background-color: #a3c4f3;
   color: white;
   text-align: center;
   padding: 20px;
@@ -18,13 +18,23 @@ main {
   padding: 20px;
 }
 
+.quote-section {
+  text-align: center;
+  background: #f8edeb;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #555;
+}
+
 .mood-tracker {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .moods button {
-  background-color: #2b6777;
+  background-color: #ffb5a7;
   color: white;
   border: none;
   margin: 5px;
@@ -35,7 +45,7 @@ main {
 }
 
 .moods button:hover {
-  background-color: #1b4b5b;
+  background-color: #ff8360;
 }
 
 .chat-container {
@@ -55,6 +65,32 @@ main {
   padding: 5px;
 }
 
+.message {
+  max-width: 70%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 12px;
+  display: inline-block;
+  animation: fadeIn 0.3s ease;
+}
+
+.user-message {
+  background-color: #a3c4f3;
+  color: white;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #f8edeb;
+  color: #333;
+  align-self: flex-start;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .input-area {
   display: flex;
   gap: 10px;
@@ -69,7 +105,7 @@ input[type="text"] {
 
 button {
   padding: 10px 15px;
-  background-color: #2b6777;
+  background-color: #a3c4f3;
   color: white;
   border: none;
   border-radius: 8px;
@@ -77,5 +113,5 @@ button {
 }
 
 button:hover {
-  background-color: #1b4b5b;
+  background-color: #779ecb;
 }
